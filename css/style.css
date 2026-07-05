@@ -124,8 +124,19 @@ body {
   list-style: none;
   margin: 0;
   padding: 1rem 1rem 1.25rem;
+  position: relative;
+  z-index: 0;
+}
+
+.sidebar-nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -100vw;
   background: var(--sidebar-bg);
-  box-shadow: -100vw 0 0 0 var(--sidebar-bg);
+  z-index: -1;
 }
 
 .sidebar-nav li {
@@ -153,9 +164,20 @@ body {
 .sidebar-card {
   margin-top: 2cm;
   padding: 1.5rem 1rem;
-  background: var(--sidebar-bg);
-  box-shadow: -100vw 0 0 0 var(--sidebar-bg);
+  position: relative;
+  z-index: 0;
   text-align: center;
+}
+
+.sidebar-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -100vw;
+  background: var(--sidebar-bg);
+  z-index: -1;
 }
 
 .sidebar-card-content {
@@ -518,6 +540,11 @@ a {
     display: flex;
     overflow-x: auto;
     gap: 0.5rem;
+  }
+
+  .sidebar-nav::before,
+  .sidebar-card::before {
+    left: 0;
   }
 
   .sidebar-nav li {
