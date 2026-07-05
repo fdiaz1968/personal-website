@@ -10,6 +10,7 @@
   --highlight: #f7ae00;
   --highlight-bg: #fff8e6;
   --info-bg: #e8f1f8;
+  --sidebar-bg: #f0f0f0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +26,7 @@
     --highlight: #f7ae00;
     --highlight-bg: #2a2213;
     --info-bg: #16232e;
+    --sidebar-bg: #1a1a1a;
   }
 }
 
@@ -111,7 +113,7 @@ body {
 
 .sidebar {
   flex: 0 0 220px;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   position: sticky;
   top: 3.2rem;
   align-self: flex-start;
@@ -121,11 +123,17 @@ body {
 .sidebar-nav {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 1rem 1rem 1.25rem;
+  background: var(--sidebar-bg);
+  box-shadow: -100vw 0 0 0 var(--sidebar-bg);
 }
 
 .sidebar-nav li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.sidebar-nav li:last-child {
+  margin-bottom: 0;
 }
 
 .sidebar-nav a {
@@ -138,15 +146,21 @@ body {
 }
 
 .sidebar-nav a:hover {
-  background: var(--surface);
+  background: var(--bg);
   color: var(--primary);
 }
 
 .sidebar-card {
-  margin-top: 3.5rem;
+  margin-top: 2cm;
+  padding: 1.5rem 1rem;
+  background: var(--sidebar-bg);
+  box-shadow: -100vw 0 0 0 var(--sidebar-bg);
+  text-align: center;
+}
+
+.sidebar-card-content {
   position: relative;
   left: -2cm;
-  text-align: center;
 }
 
 .sidebar-card h3 {
