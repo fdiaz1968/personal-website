@@ -191,13 +191,6 @@ body {
   color: var(--text);
 }
 
-.sidebar-card-label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  color: var(--text);
-}
-
 .sidebar-card img {
   display: block;
   width: 100%;
