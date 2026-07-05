@@ -163,7 +163,7 @@ body {
 }
 
 .sidebar-card {
-  margin-top: 2cm;
+  margin-top: 1cm;
   padding: 1.5rem 1rem;
   position: relative;
   z-index: 0;
@@ -171,7 +171,7 @@ body {
 }
 
 .sidebar-card.sidebar-card--tight {
-  margin-top: 1cm;
+  margin-top: 0.5cm;
 }
 
 .sidebar-card::before {
