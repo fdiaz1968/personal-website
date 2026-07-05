@@ -112,7 +112,7 @@ body {
 }
 
 .sidebar {
-  flex: 0 0 220px;
+  flex: 0 0 110px;
   padding: 2rem 0;
   position: sticky;
   top: 3.2rem;
