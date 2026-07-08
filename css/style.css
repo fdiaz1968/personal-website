@@ -377,8 +377,8 @@ section:first-child {
 }
 
 .research-panel {
-  background: var(--info-bg);
-  border-left: 4px solid var(--primary);
+  background: var(--highlight-bg);
+  border-left: 4px solid var(--highlight);
   border-radius: 6px;
   padding: 1.5rem 1.75rem;
   margin-top: 1.5rem;
@@ -415,23 +415,6 @@ section:first-child {
 .panel-blue {
   background: var(--info-bg);
   border-left-color: var(--primary);
-}
-
-.tag-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin: 0;
-  padding: 0;
-}
-
-.tag-list li {
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.35rem 0.9rem;
-  font-size: 0.9rem;
-  color: var(--muted);
 }
 
 .pub-list,
@@ -487,6 +470,11 @@ section:first-child {
   padding: 0.5rem 0;
   padding-left: 1.1rem;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
 }
 
 .exp-list li::before {
@@ -510,6 +498,19 @@ section:first-child {
 
 .cv-button:hover {
   opacity: 0.9;
+}
+
+.app-bar-cv {
+  margin-top: 0;
+  padding: 0.45rem 1rem;
+  font-size: 0.95rem;
+  background: rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+.app-bar-cv:hover {
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 1;
 }
 
 footer {
