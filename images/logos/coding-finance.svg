@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 90">
+  <rect x="0" y="0" width="340" height="90" rx="10" fill="#252627"/>
+  <text x="28" y="55" font-family="'SF Mono', 'Menlo', 'Consolas', monospace" font-size="34" font-weight="700" fill="#fe5186">&gt;</text>
+  <text x="58" y="55" font-family="'SF Mono', 'Menlo', 'Consolas', monospace" font-size="30" font-weight="600" fill="#e4e4e8">coding finance</text>
+  <rect x="309" y="30" width="5" height="26" rx="1.5" fill="#fe5186">
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.45;0.5;0.95;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
